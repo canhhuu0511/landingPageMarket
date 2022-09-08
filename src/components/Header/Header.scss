@@ -1,0 +1,106 @@
+@import "../../styles/app";
+
+.header {
+  border-bottom: 1px solid rgba(white, 0.3);
+  background-color: $black-two;
+  &-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 27px 97px;
+  }
+  &-tool {
+    display: flex;
+    align-items: center;
+    gap: 0 50px;
+  }
+  @include maxWidth(1599px) {
+    &-main {
+      padding: 27px 97px ;
+    }
+  }
+  @include maxWidth(1024px) {
+    &-main {
+      padding: 20px 14px;
+    }
+  }
+  &-left{
+    display: flex;
+    .header-tool{
+        padding-right: 0;
+        border-left: 0.8px solid white;
+    }
+  }
+}
+
+.menu {
+    padding-right: 40px;
+  &-list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 0 50px;
+    color: white;
+    margin-right: auto;
+  }
+  &-link {
+    color: white !important;
+    font-family: Montserrat;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+    font-size: 14px;
+    text-transform: uppercase !important;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0);
+    transition: all 0.5s ease-in;
+    position: relative;
+    &:hover:after{
+        width:100%;
+     }
+  }
+  a:after{
+    content:'';
+    position:absolute;
+    height:1px;
+    width:0;
+    bottom:-.3rem;
+    left:0;
+    transition:300ms ease-in;
+    background:white;
+  }
+  @include maxWidth(1023px) {
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 300px;
+    background-color: white;
+    padding: 0 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    z-index: 99;
+    transform: translateX(100%);
+    transition: 0.25s linear;
+    &.is-active {
+      transform: translateX(0);
+    }
+    &-list {
+      flex-direction: column;
+      height: 100%;
+      padding: 50px 20px;
+    }
+    &-item {
+      width: 100%;
+      margin-bottom: 15px;
+    }
+    &-link {
+      display: block;
+      width: 100%;
+      color: $black-two !important;
+      padding: 15px 20px;
+      
+      a:hover {
+        color: white !important;
+      }
+    }
+  }
+}

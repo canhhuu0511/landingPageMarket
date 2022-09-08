@@ -1,0 +1,49 @@
+@import "../../../styles/app.scss";
+.intro{
+    height: auto;
+    background-image: url(../../../images/introduction-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    &-heading{
+        font-size: 50px;
+        font-weight: 700;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.2;
+        letter-spacing: 5px;
+        text-align: left;
+        color: white;
+        padding-top: 174px;
+    }
+    &-content{
+        display: block;
+        width: 680px;
+        height: 125px;
+        font-family: Montserrat;
+        font-size: 20px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.75;
+        letter-spacing: normal;
+        text-align: left;
+        color: white;
+        margin: 0;
+        padding-bottom: 181px;
+        margin-top: 59px;
+    }
+
+    .container{
+        @include maxWidth(1600px){
+            padding: 0 175px;
+        }
+        @include maxWidth(1569px){
+            padding: 0 175px;
+        }
+        @include maxWidth(1569px){
+            padding: 0 175px;
+        }
+    }
+    
+
+}

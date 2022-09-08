@@ -1,0 +1,93 @@
+@import "../../../styles/app.scss";
+.best-product{
+    padding: 150px 175px 154px 176px;
+    background-image: url('../../../images/bes-bg.png');
+    &-heading{
+        color: $secondary-color-bright-orange;
+        &-title{
+            height: 37px;
+            margin: 0 29px 49px;
+            font-size: 50px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.2;
+            letter-spacing: 5px;
+            text-align: center;
+        }
+        &-content{
+            display: block;
+            width: 690px;
+            height: 52px;
+            margin: 0 auto;
+            font-size: 20px;
+            line-height: 1.6;
+            text-align: center;
+        }
+
+    }
+
+    &-menu{
+        margin-top: 74px;
+        &-list{
+            display: flex;
+            padding: 0;
+        }
+    }
+
+    &-card{
+        position: relative;
+        width: 523px;
+        img{
+            width: 100%;
+        }
+       
+        &-index-logo{
+            font-family: "Montserrat";
+            position: absolute;
+            padding: 31px;
+            background-image: url("../../../images/producticon-bg.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            font-size: 30px;
+            font-weight: 800;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 0.83;
+            letter-spacing: normal;
+            text-align: left;
+            color: $dark-brown;
+            transform: translateY(-50%);
+        }
+        &-bottom{
+            position: absolute;
+            background-color: white;
+            padding: 7px 8px 6px 27px;
+            width: 369px;
+            border: solid 3px $dark-brown;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            .btn-go{
+                width: 50px;
+            }
+        }
+
+        @include maxWidth(1600px){
+            width: 400px;
+            &-index-logo{
+                padding: 25px;
+            }
+            &-bottom{
+                width: 250px;
+                font-size: 14px;
+                .btn-go{
+                    width: 50px;
+                }
+            }
+        }
+    }
+}

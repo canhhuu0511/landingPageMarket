@@ -1,0 +1,18 @@
+@import "../../../styles/app.scss";
+
+.list-product{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    row-gap: 64px;
+    column-gap: 18px;
+    padding: 175px;
+
+    @include maxWidth(1600px){
+        grid-template-columns: auto auto auto auto;
+        column-gap: 10px;
+        row-gap: 30px;
+
+    }
+  
+}
+

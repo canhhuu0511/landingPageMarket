@@ -1,0 +1,44 @@
+@import "../../../styles/app.scss"
+;
+.main{
+    height: calc(100vh - 80px);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: $secondary-color;
+    background-position: center;
+    position: relative;
+
+    &-banner{
+        height: calc(100vh - 80px);
+        background-image: url(../../../images/main-banner.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+
+    @include maxWidth(1450px){
+        height: 50vh;
+        &-banner{
+            background-position: top;
+            background-size: contain;
+            width: 100%;
+        }
+    }
+    @include maxWidth(700px){
+        height: 50vh;
+        &-banner{
+            height: 50vh;
+        }
+    }
+    @include maxWidth(700px){
+        height: 30vh;
+        &-banner{
+            height: 30vh;
+        }
+    }
+}

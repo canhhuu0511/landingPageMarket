@@ -1,0 +1,47 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+  margin: 0 auto;
+  line-height: 1;
+  max-width: 1920px !important;
+}
+.container {
+  padding: 0;
+  max-width: 1568px !important;
+  margin: 0 auto;
+}
+     
+ul {
+  margin: 0;
+  list-style: none;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,p{
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat";
+}
+section[id] {
+  scroll-margin-top: 30px;
+}
+.wrapper {
+  max-width: 1920px;
+  margin: 0 auto;
+//   background: url("../images/img1.jpg") no-repeat top / 100%;
+}
+
+section {
+  display: none;
+}
