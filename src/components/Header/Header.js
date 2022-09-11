@@ -34,7 +34,7 @@ const Header = () => {
               </li>
             </ul>
           </div>
-          <div className=" header-tool">
+          {/* <div className=" header-tool">
             <ul className="menu-list">
               <li className="menu-item">
                 <a href="#experience" className="menu-link">
@@ -47,7 +47,7 @@ const Header = () => {
                 </a>
               </li>
             </ul>
-          </div>
+          </div> */}
           </div>
         </div>
     </header>

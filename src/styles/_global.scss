@@ -1,8 +1,27 @@
+$primary-font : 'Montserrat', sans-serif;
+$black-three:#222222;
+html {
+  scroll-behavior: smooth;
+}
 
+input,
+button,
+textarea,
+select {
+  font-family: $primary-font;
+  font-size: 16px;
+  outline: none;
+  border: 0;
+}
+input {
+  line-height: normal;
+}
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: $primary-font;
+  font-size: 18px;
   position: relative;
   margin: 0 auto;
   line-height: 1;
@@ -45,3 +64,29 @@ section[id] {
 section {
   display: none;
 }
+
+.btn-see-more{
+        cursor: pointer;
+        color:  $black-three;
+        font-size: 23px;
+        font-weight: 800;
+        font-stretch: normal;
+        font-family: "Montserrat";
+        font-style: normal;
+        line-height: 1.09;
+        letter-spacing: normal;
+        text-align: left;
+        text-transform: uppercase;
+        padding: 21px 36px;
+        border: 3px solid $black-three;
+        background: white; /* default color */
+        /* "to left" / "to right" - affects initial color */
+        background: linear-gradient(to left, white 50%, $black-three 50%) right;
+        background-size: 200%;
+        transition: .3s ease-out;
+        &:hover{
+            background-position: left;
+            color: white;
+        }
+    }
+

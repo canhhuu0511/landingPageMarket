@@ -19,6 +19,12 @@ const SectionListProduct = () => {
         {listProducts.length>0&&listProducts.map((product,key)=>(
             <ProductCard key={key} product={product}/>
         ))}
+
+        <div className="list-product-bottom">
+            <a className="btn-see-more">
+                see more
+            </a>
+        </div>
     </div>
   ):(
     <div className='list-product'>

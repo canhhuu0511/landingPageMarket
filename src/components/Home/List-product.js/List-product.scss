@@ -2,17 +2,25 @@
 
 .list-product{
     display: grid;
-    grid-template-columns: auto auto auto auto auto;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     row-gap: 64px;
     column-gap: 18px;
     padding: 175px;
+    padding-bottom: 250px;
+    position: relative;
 
     @include maxWidth(1600px){
-        grid-template-columns: auto auto auto auto;
-        column-gap: 10px;
-        row-gap: 30px;
-
+        // padding: 20px;
     }
-  
+    @include maxWidth(750px){
+        // padding: 75px;
+    }
+  &-bottom{
+    margin-top: 50px;
+    position: absolute;
+    left: 50%;
+    bottom: 100px;
+    transform: translateX(-50%);
+  }
 }
 

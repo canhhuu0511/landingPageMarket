@@ -1,9 +1,18 @@
 @import "../../../styles/app.scss";
 .intro{
-    height: auto;
+    height: 70vh;
     background-image: url(../../../images/introduction-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center center;
+    background-attachment:fixed;
+    position: relative;
+    padding: 0 175px;
+    .container{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
     &-heading{
         font-size: 50px;
         font-weight: 700;
@@ -13,13 +22,13 @@
         letter-spacing: 5px;
         text-align: left;
         color: white;
-        padding-top: 174px;
+        // padding-top: 174px;
     }
     &-content{
         display: block;
         width: 680px;
         height: 125px;
-        font-family: Montserrat;
+        font-family: $primary-font;
         font-size: 20px;
         font-weight: normal;
         font-stretch: normal;
@@ -29,20 +38,21 @@
         text-align: left;
         color: white;
         margin: 0;
-        padding-bottom: 181px;
+        // padding-bottom: 181px;
         margin-top: 59px;
     }
 
     .container{
-        @include maxWidth(1600px){
-            padding: 0 175px;
-        }
-        @include maxWidth(1569px){
-            padding: 0 175px;
-        }
-        @include maxWidth(1569px){
-            padding: 0 175px;
-        }
+        // @include maxWidth(1600px){
+        //     padding: 0 175px;
+        //     // padding-top: 5rem;
+        // }
+        // @include maxWidth(1569px){
+        //     padding: 0 175px;
+        // }
+        // @include maxWidth(1569px){
+        //     padding: 0 175px;
+        // }
     }
     
 

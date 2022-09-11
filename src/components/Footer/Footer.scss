@@ -1,0 +1,93 @@
+@import "../../styles/app.scss";
+
+.footer{
+    font-family: $secondary-font;
+    font-size: 14px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2.14;
+    letter-spacing: normal;
+    text-align: left;
+    color: var(--black-two);
+    .footer-container{
+        padding: 50px 100px;
+    }
+    .title{
+        color: $black-two;
+        font-family: $primary-font;
+        font-size: 14px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 2.86;
+        letter-spacing: normal;
+        text-align: left;
+        margin-bottom: 30px;
+    }
+    ul{
+        padding: 0;
+        li{
+            a{
+                font-family: $secondary-font !important;
+                font-size: 14px !important;
+                font-weight: 300;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 2.14;
+                letter-spacing: normal;
+                text-align: left;
+                color: var(--black-two);
+            }
+        }
+    }
+    &-main-content{
+        display: flex;
+        justify-content: space-between;
+        @include maxWidth(1190px){
+            flex-direction: column;
+            gap: 20px;
+
+            .title{
+                margin-bottom: 0px;
+            }
+        }
+        &-right{
+            .row{
+                display: flex;
+                gap: 100px;
+                @include maxWidth(1190px){
+                    flex-direction: column;
+                    gap: 30px;
+
+                    .title{
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+    }
+    &-bottom-content{
+        margin-top:60px;
+        padding-top: 20px;
+        border-top: 0.5px solid rgba(0, 0, 0, 0.078);
+        display: flex;
+        justify-content: space-between;
+        @include maxWidth(1190px){
+            flex-direction: column;
+            gap: 20px;
+        }
+        &-left{
+            span{
+                display: block;
+            }
+        }
+        &-right{
+            .list-icons{
+                display: flex;
+                gap: 24px;
+                
+            }
+        }
+    }
+}
